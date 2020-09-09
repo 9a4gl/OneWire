@@ -161,7 +161,7 @@ bool directRead(IO_REG_TYPE mask)
 #define PIN_TO_BASEREG(pin)             (0)
 #define PIN_TO_BITMASK(pin)             (pin)
 #define IO_REG_TYPE uint32_t
-#define IO_REG_BASE_ATTR
+#define IO_REG_BASE_ATTR __attribute__((unused))
 #define IO_REG_MASK_ATTR
 
 static inline __attribute__((always_inline))
